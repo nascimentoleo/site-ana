@@ -436,7 +436,7 @@ body {
 .contact-item a:hover {
     color: #FFAC49;
 }
-.whatsapp-section {
+.social-media-section {
     text-align: center;
 }
 
@@ -646,4 +646,28 @@ body {
     .specialties-grid {
         grid-template-columns: 1fr;
     }
+}
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(225, 48, 108, 0.3);
+    margin-top: 15px;
+}
+
+.instagram-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(225, 48, 108, 0.4);
+}
+
+.instagram-button i {
+    font-size: 1.5rem;
 }

@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Video placeholder click handler
 document.querySelector('.video-placeholder').addEventListener('click', () => {
-    alert('Aqui você pode integrar um vídeo do YouTube, Vimeo ou outro player de sua escolha.');
+    alert('Em breve colocarei um video meu aqui. Enquanto isso, você pode me conhecer melhor através do meu perfil no Instagram!');
 });
 
 // WhatsApp button click tracking (optional)
