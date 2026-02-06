@@ -92,12 +92,10 @@ body {
     justify-content: flex-start;
     position: relative;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center top;
     background-repeat: no-repeat;
     padding: 0 8%;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
 }
 
 .hero-overlay {
@@ -113,6 +111,7 @@ body {
     position: relative;
     z-index: 2;
     color: white;
+    font-weight: 700;
     max-width: 520px;
     padding: 2.5rem 2.75rem;
     text-align: left;
@@ -127,18 +126,20 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: none;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 1rem;
-    opacity: 0.85;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .hero-description {
     font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     margin-bottom: 2rem;
     opacity: 0.8;
 }
@@ -593,8 +594,11 @@ body {
 
     .hero {
         justify-content: center;
+        align-items: center;
         padding: 0 20px;
-        background-position: center;
+        padding-top: 55vh;
+        background-position: center top;
+        background-attachment: scroll;
     }
 
     .hero-content {
