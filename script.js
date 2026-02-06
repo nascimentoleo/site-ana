@@ -23,7 +23,9 @@ window.addEventListener('scroll', () => {
     const navLinks = header.querySelectorAll('.nav-menu a');
     const hamburgerSpans = header.querySelectorAll('.hamburger span');
     
-    if (window.scrollY > 100) {
+    const heroHeight = document.querySelector('.hero') ? document.querySelector('.hero').offsetHeight : 100;
+    
+    if (window.scrollY > heroHeight - 80) {
         header.style.background = 'rgba(255, 255, 255, 0.98)';
         header.style.backdropFilter = 'blur(10px)';
         header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
