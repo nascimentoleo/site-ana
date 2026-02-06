@@ -18,12 +18,27 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 // Header background on scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
+    const navBrand = header.querySelector('.nav-brand h2');
+    const navBrandSpan = header.querySelector('.nav-brand span');
+    const navLinks = header.querySelectorAll('.nav-menu a');
+    const hamburgerSpans = header.querySelectorAll('.hamburger span');
+    
     if (window.scrollY > 100) {
         header.style.background = 'rgba(255, 255, 255, 0.98)';
+        header.style.backdropFilter = 'blur(10px)';
         header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+        if (navBrand) navBrand.style.color = '#FFAC49';
+        if (navBrandSpan) navBrandSpan.style.color = '#666';
+        navLinks.forEach(a => a.style.color = '#333');
+        hamburgerSpans.forEach(s => s.style.background = '#333');
     } else {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.background = 'transparent';
+        header.style.backdropFilter = 'none';
         header.style.boxShadow = 'none';
+        if (navBrand) navBrand.style.color = 'white';
+        if (navBrandSpan) navBrandSpan.style.color = 'rgba(255,255,255,0.8)';
+        navLinks.forEach(a => a.style.color = 'white');
+        hamburgerSpans.forEach(s => s.style.background = 'white');
     }
 });
 
