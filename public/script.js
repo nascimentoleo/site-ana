@@ -1,3 +1,14 @@
+const WHATSAPP_URL = 'https://wa.me/message/VZOVT2BDPJOIB1';
+
+function openWhatsApp() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11120883475/bH_jCMeotYgcEJPu7LYp',
+    'value': 200.0,
+    'currency': 'BRL',
+  });
+  window.open(WHATSAPP_URL, '_blank');
+}
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
